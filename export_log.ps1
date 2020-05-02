@@ -1,8 +1,10 @@
 # Capture the script start time
 $ScriptStartTime = Get-Date
 
+# Set output location for CSV files.
+$LogOutputDirectory = 'C:\data\Windows Event Log Export'
+
 # Define Windows event log types to export.
-$LogOutputDirectory = 'Q:\data\Windows Event Log Export'
 $EventTypesToExport = @('Application', 'Security', 'Setup', 'System', 'ForwardedEvents')
 
 foreach ($EventType in $EventTypesToExport)
