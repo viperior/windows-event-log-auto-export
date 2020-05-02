@@ -3,9 +3,10 @@ This PowerShell script automatically exports Windows event logs to CSV files tha
 
 ## Usage
 1. Download `export_log.ps1`.
-2. Edit `export_log.ps1` by setting the target directory for the exported log data.
-3. Customize the types of events you want to export to CSV using `$EventTypesToExport`, depending on your requirements.
-4. At this point, you can either perform a one-time export by executing the script via PowerShell. Alternatively, you can create a scheduled task to do this daily.
+2. Decide where you want to store the log CSV data and create the directory if it does not already exist.
+3. Edit `export_log.ps1` by setting the target directory for the exported log data.
+4. Customize the types of events you want to export to CSV using `$EventTypesToExport`.
+5. At this point, you can either perform a one-time export by executing the script via PowerShell. Alternatively, you can create a scheduled task to do this daily.
 
 ## Example Output Files
 ![Example Output Files](https://raw.githubusercontent.com/viperior/windows-event-log-auto-export/master/images/example-output-files.png?sanitize=true)
